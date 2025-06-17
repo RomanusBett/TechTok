@@ -1,0 +1,101 @@
+label,
+input, 
+button{
+    box-sizing: border-box;
+    display: block;
+}
+label,
+.redirectBox p{
+    color: rgb(87, 87, 87);
+    font-size: .8rem
+}
+.fullLogoBigBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.fullLogoContainer{
+    height: 8vh;
+    position: relative;
+    overflow: hidden;
+    background: #eee;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fullLogoContainer img{
+    max-width: 200%;
+    max-height: 200%;
+    object-fit: contain;
+}
+.actionSpan{
+    color: rgb(0, 153, 0)
+}
+.authPage{
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.formContainer{
+    background-color: #fff;
+    padding: 3%;
+    border-radius: 10px;
+    width: 30%;
+}
+.formElement{
+    width: 100%;
+}
+.formElContainer{
+    margin: 10px;
+}
+.formElContainer input{
+    border: 1px solid #d5d5d5;
+    margin-top: 3px;
+}
+.formElContainer button{
+    border: 1px solid #00750c;
+    background-color: #fafbfd;
+    color: #00710b;
+    font-weight: 600;
+    font-size: .95rem;
+}
+.formElContainer button:hover{
+    background-color: #eef2fe;
+    cursor: pointer;
+}
+.formElContainer input, button{
+    height: 2rem;
+    border-radius: 5px;
+}
+.redirectBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.googleButtonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.googleAuthEl{
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.signInText{
+    margin: 0;
+}
+.googleIcon{
+    height: 1rem;
+    width: 1rem;
+}
