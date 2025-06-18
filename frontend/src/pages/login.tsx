@@ -17,7 +17,7 @@ const LoginPage = () => {
                         <input className='formElement formButton' type="password" id="logInPassword" />
                     </div>
                     <div className='formElContainer'>
-                        <button className='formElement formButton'>SIGN IN</button>
+                        <button className='formElement formButton'>Sign in</button>
                     </div>
                     <div className='formElContainer redirectBox'><p>or</p></div>
                     <div className='formElContainer'>

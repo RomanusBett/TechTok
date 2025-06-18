@@ -29,7 +29,7 @@ const RegisterPage = () => {
                             <input className='formElement' type="password" id="confirmPassword" />
                         </div>
                         <div className='formElContainer'>
-                            <button className='formElement'>SIGN UP</button>
+                            <button className='formElement'>Sign up</button>
                         </div>
                         <div className='formElContainer redirectBox'><p>or</p></div>
                         <div className='formElContainer'>
