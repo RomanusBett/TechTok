@@ -1,0 +1,60 @@
+.navElBox{
+    display: flex;
+}
+.brandBox{
+    width: 100%;
+    justify-content: center;
+}
+.brandBoxChild{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.navLogoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.navLogoContainer img{
+    height: 4rem;
+    width: 4rem;
+}
+.navigationList{
+    gap: 10px;
+}
+.navigationList li{
+    list-style: none;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.navLogoContainer p{
+    font-size: .9rem;
+    font-weight: 600;
+}
+.tech{
+    color: rgb(33, 33, 246);
+}
+.tok{
+    color: green;
+}
+.navLinkBoxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    color: rgb(85, 85, 85);
+}
+.navLinkBoxes:hover{
+    color: rgb(44, 44, 44);
+}
+.navLinkBoxes img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.navLinkBoxes a{
+    text-decoration: none;
+    color: #1e293b;
+}

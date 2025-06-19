@@ -1,0 +1,41 @@
+.definitionBox{
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #0044d6;
+    height: 40vh;
+}
+.homeContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.defChildBox{
+    text-align: center;
+}
+.defChildBox h1{
+    font-size: 3rem;
+}
+.startups{
+    color: rgba(2, 250, 2, 0.804);
+}
+.featuredContainer{
+    background-color: #f8fafc;
+    flex-direction: column;
+}
+.cardsContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footerBlock{
+    background-color: #1e293b;
+    color: #fff;
+    font-size: .8rem;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+}

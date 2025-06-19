@@ -1,0 +1,67 @@
+.bigCard:first-child{
+    border-block: 1px solid rgb(206, 206, 206);
+}
+.bigCard{
+    width: 80%;
+    padding: 1.5% 0;
+    border-bottom: 1px solid rgb(206, 206, 206);;
+}
+.cardElements{
+    display: flex;
+}
+.cardinfoBox{
+    gap: 2%;
+    font-size: .85rem;
+    font-weight: 600;
+    color: rgb(94, 94, 94);
+    align-items: center;
+}
+.iconImage{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+.calendarBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.startupInfoSection{
+    flex-direction: column;
+    color: #1e293b;
+}
+.startupInfoSection h2{
+    margin: 0;
+}
+.startupInfoSection button{
+    cursor: pointer;
+    background-color: #1e293b;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    color: #fff;
+}
+.blogContent{
+    display: flex;
+    gap: 20px;
+}
+.startupInfoSection button:hover{
+    background-color: #253655;
+}
+.startupInfoSection p{
+    font-size: .9rem;
+}
+.reactionElements{
+    gap: 15px;
+}
+.reactionBox{
+    display: flex;
+    font-size: .8rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.reactionBox:hover{
+    color: rgb(166, 0, 0);
+    cursor: pointer;
+}
