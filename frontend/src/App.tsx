@@ -3,6 +3,7 @@ import RegisterPage from "./pages/register";
 import LoginPage from "./pages/login";
 import HomePage from "./pages/home";
 import ProfilePage from "./pages/profilePage";
+import BlogDetails from "./pages/blogDetails";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/login" element={<LoginPage/>}/>
           <Route path="/" element={<HomePage />}/>
           <Route path="/profile" element={<ProfilePage />}/>
+          <Route path="/blog/:id" element={<BlogDetails/>}/>
         </Routes>
       </div>
     </BrowserRouter>
