@@ -1,0 +1,36 @@
+.individualBlog{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blogDetailsContainer{
+    width: 85%;
+    background-color: #f8fafc;
+    padding: 2%;
+}
+.blogInfoBox h1{
+    color: green;
+}
+
+.blogInfoBox p{
+    font-size: .9rem;
+}
+.commentUsername{
+    color: grey;
+}
+.commentBox{
+    margin-top: 1%;
+    border-bottom: 1px solid rgb(227, 227, 227);
+}
+.commentBox p{
+    font-size: .8rem;
+    margin: 0;
+}
+.makeComment{
+    margin-top: 2%;
+}
+.commentInput{
+    width: 70%;
+    margin: 1% 0;
+}

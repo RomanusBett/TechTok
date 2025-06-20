@@ -1,7 +1,8 @@
 import './cards.css';
+import { Link } from 'react-router-dom';
 
 interface BlogCardProps{
-    key:number;
+    id:number;
     name: string;
     date: string;
     title: string;
@@ -10,9 +11,9 @@ interface BlogCardProps{
     comments: number;
 }
 
-const BlogCard = ({key, name, date, title, content, likes, comments}: BlogCardProps) => {
+const BlogCard = ({id, name, date, title, content, likes, comments}: BlogCardProps) => {
     return (
-        <div key={key} className='bigCard'>
+        <div key={id} className='bigCard'>
             <div className="cardElements cardinfoBox">
                 <p>{name}</p>
                 <div className='calendarBox'>
@@ -24,7 +25,9 @@ const BlogCard = ({key, name, date, title, content, likes, comments}: BlogCardPr
                 <h2>{title}</h2>
                 <div className='blogContent'>
                     <p>{content.split(" ").slice(0, 40).join(" ")}...</p>
-                    <button>read more</button>
+                    <Link to={`/blog/${id}`}>
+                        <button>read more</button>
+                    </Link>
                 </div>
             </div>
             <div className="cardElements reactionElements">

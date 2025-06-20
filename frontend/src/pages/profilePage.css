@@ -1,0 +1,50 @@
+.createBlogContainer{
+    background-color: #f8fafc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+.createFormContainer{
+    width: 80%;
+    background-color: #fff;
+    padding: 2%;
+    margin-top: 2%;
+}
+.createForm input, 
+.createForm textarea{
+    width: 100%;
+    border: 1px solid green;
+}
+.createForm textarea{
+    height: 30vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.blogFormEl{
+    margin-top: 2%;
+}
+.personalDetails{
+    color: green;
+}
+.userInformation{
+    display: flex;
+    width: 100%;
+}
+.userFormEl{
+    width: 50%;
+}
+.userFormEl input{
+    width: 95%;
+}
+.passwordEl{
+    width: 100%;
+}
+.passwordEl input{
+    width: 97.5%;
+}
+.passwordEl label,
+.userDetailsButton{
+    margin-top: 1%;
+}

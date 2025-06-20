@@ -1,8 +1,8 @@
 import Navbar from "../components/navbar";
 import BlogCard from "../components/blogCard";
-import './homePage.css';
 import { blogPosts } from "../blogObjects/blogData";
 import CaptionHolder from "../components/captionHolder";
+import './homePage.css';
 
 const HomePage = () => {
     const title = "Discover Kenyan ";
@@ -19,7 +19,7 @@ const HomePage = () => {
                     {blogPosts.map((blog, index) => {
                         return (
                             <BlogCard
-                                key={index}
+                                id={blog.id!}
                                 name={blog.author}
                                 date={blog.date}
                                 title={blog.title}
