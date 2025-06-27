@@ -12,9 +12,12 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = DATABASE_URL
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     BCRYPT_LOG_ROUNDS = 13
-    WTF_CSRF_ENABLED = True
+    WTF_CSRF_ENABLED = False
     DEBUG_TB_ENABLED = False
     DEBUG_TB_INTERCEPT_REDIRECTS = False
+    SESSION_COOKIE_SECURE = False             
+    SESSION_COOKIE_SAMESITE = "Lax"           
+    SESSION_COOKIE_HTTPONLY = True
     
 class DevelopmentConfig(Config):
     DEVELOPMENT = True
