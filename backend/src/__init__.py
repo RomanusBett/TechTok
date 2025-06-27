@@ -3,12 +3,14 @@ from flask import Flask
 from flask_login import LoginManager
 from src.extensions import db, bcrypt, migrate
 from .myapp.models import User
+from flask_cors import CORS
 
 app = Flask(__name__)
 app.config.from_object(config('APP_SETTINGS'))
 bcrypt.init_app(app)
 db.init_app(app)
 migrate.init_app(app, db)
+CORS(app)
 
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -24,9 +26,11 @@ from src.myapp.views.userLogin import login_bp
 from src.myapp.views.logout import logout_bp
 from src.myapp.views.createBlog import createBlog_bp
 from src.myapp.views.blogReaction import blogReactions_bp
+from src.myapp.views.checkAuth import check_auth_bp
 
 app.register_blueprint(register_bp)
 app.register_blueprint(login_bp)
 app.register_blueprint(logout_bp)
 app.register_blueprint(createBlog_bp)
 app.register_blueprint(blogReactions_bp)
+app.register_blueprint(check_auth_bp)
