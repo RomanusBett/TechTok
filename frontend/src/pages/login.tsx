@@ -8,7 +8,7 @@ import './authPage.css';
 const LoginPage = () => {
     const [formData, setFormData] = useState<LoginData>({
         email: '',
-        password: ''
+        password: '' 
     });
     const [message, setMessage] = useState<string | null>(null);
 
@@ -18,7 +18,7 @@ const LoginPage = () => {
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            const res = await axios.post('http://localhost:5000/login', formData, {
+            const res = await axios.post('http://127.0.0.1:5000/login', formData, {
                 withCredentials: true, headers: {
                     'Content-Type': 'application/json'
                 }
