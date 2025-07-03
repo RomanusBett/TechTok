@@ -1,3 +1,4 @@
+import axios from 'axios';
 import './navElements.css';
 
 interface NavbarProps {
@@ -7,6 +8,15 @@ interface NavbarProps {
 }
 
 const Navbar = ({ toPage, selectImage, pageLink }: NavbarProps) => {
+    const logoutUser = () => {
+        axios.post('http://127.0.0.1:5000/logout', {}, {withCredentials:true}).then(
+            res => {
+                console.log(res.data);
+                window.location.href = '/';
+            }
+        ).catch(err => console.log(err))
+    }
+
     return (
         <div className='navElBox brandBox'>
             <div className='brandBoxChild'>
@@ -19,11 +29,9 @@ const Navbar = ({ toPage, selectImage, pageLink }: NavbarProps) => {
                         <img src={selectImage} alt='profile' />
                         <li><a href={pageLink}>{toPage}</a></li>
                     </div>
-                    <div className='navLinkBoxes'>
+                    <div className='navLinkBoxes' onClick={logoutUser}>
                         <img src='/logout.png' alt='logout' />
-                        <a href='/login'>
-                            <li>logout</li>
-                        </a>
+                        <li>logout</li>
                     </div>
 
                 </ul>

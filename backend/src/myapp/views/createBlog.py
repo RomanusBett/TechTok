@@ -43,7 +43,7 @@ def getBlogs():
         "title": post.title,
         "content": post.content,
         "posted_on": post.timestamp,
-        "comments": len(post.comments),
+        "total_comments": len(post.comments),
         "likes": len(post.likes)
         }
         for post in posts
@@ -58,9 +58,13 @@ def get_post_comments(post_id):
            "id": post.id,
             "title": post.title,
             "content": post.content,
-            "timestamp": post.timestamp,
+            "posted_on": post.timestamp,
             "likes": len(post.likes),
             "total_comments": len(post.comments),
+            "authorName": [{
+                "f_name": post.author.f_name,
+                "l_name": post.author.l_name
+            }],
             "comments": [
                 {
                     "id": comment.id,

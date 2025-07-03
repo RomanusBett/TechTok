@@ -28,7 +28,11 @@ const RegisterPage: React.FC = () => {
             try {
                 const res = await axios.post('http://127.0.0.1:5000/register', formData, {
                     withCredentials: true,
-                });
+                    headers: {
+                        'Authorization': 'Bearer your_token',
+                        'Content-Type': 'application/json'
+                    }
+                })
                 setMessage(res.data.message)
                 window.location.href = '/'
             } catch (err: any) {

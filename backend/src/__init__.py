@@ -10,11 +10,11 @@ app.config.from_object(config('APP_SETTINGS'))
 bcrypt.init_app(app)
 db.init_app(app)
 migrate.init_app(app, db)
-CORS(app)
+CORS(app, origins=['http://localhost:3000'], supports_credentials=True)
 
 login_manager = LoginManager()
 login_manager.init_app(app)
-login_manager.login_view = 'myapp.login'
+login_manager.login_view = 'login.login'
 login_manager.login_message_category = 'danger'
 
 @login_manager.user_loader
